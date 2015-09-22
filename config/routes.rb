@@ -1,6 +1,6 @@
 Myapp::Application.routes.draw do
   get "home_page/lesson"
-
+  root "home_page#lesson"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
