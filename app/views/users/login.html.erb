@@ -1,0 +1,15 @@
+<!-- This page is used to Login a User -->
+
+<h1>Login</h1>
+ <%= form_tag process_login_path, method:"post", class:"form-horizontal" do %>
+  <p id="loginerror" style="color:red"><%= flash[:error] %></p>
+   <div class="form-group">
+      <label class= "col-sm-2 control-label"> Username </label>
+      <%=text_field_tag :login, params[:login], class:"form-control" %>
+   </div>
+ <div class="form-group">
+   <label class="col-sm-2 control-label"> Password </label> 
+   <%=password_field_tag :password, params[:password], class:"form-control" %>
+ </div>
+  <%= submit_tag "Login", id:"loginSubmit", class: "btn btn-primary" %>
+ <%end%>

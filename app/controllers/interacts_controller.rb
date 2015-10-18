@@ -1,0 +1,2 @@
+class InteractsController < ApplicationController
+end
